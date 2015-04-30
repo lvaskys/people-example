@@ -1,6 +1,7 @@
 package uptakesample;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 public class Person {
@@ -11,7 +12,7 @@ public class Person {
 
 	private String firstName;
 	private String lastName;
-	private Integer age;
+	private Date birthdate;
 
 	public String getFirstName() {
 		return firstName;
@@ -29,11 +30,12 @@ public class Person {
 		this.lastName = lastName;
 	}
 
-	public Integer getAge() {
-		return age;
+	public Date getBirthdate() {
+		return birthdate;
 	}
 
-	public void setAge(Integer age) {
-		this.age = age;
+	public void setBirthdate(Date birthdate) {
+		this.birthdate = birthdate;
 	}
+
 }
